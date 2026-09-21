@@ -6,6 +6,11 @@ O conceito inicial do site consistia em uma interface moderna e simplificada, se
 A versão beta atual foi elaborada em menos de uma semana e permanece em desenvolvimento; todo o conteúdo está sujeito a aprovação e poderá sofrer revisões futuras.
 
 ---
+** Landing Page
+
+<img src="public/assets/imgs/landing.png" alt="Landing StatPoker" width="300" align="center">
+
+---
 
 ## Estrutura de Arquivos
 
