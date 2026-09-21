@@ -16,11 +16,11 @@ A versão beta atual foi elaborada em menos de uma semana e permanece em desenvo
 
 ## Visualização de torneios cadastrados
 
-<img src="public/assets/imgs/list.png" alt="Landing StatPoker" width="100%" align="center">
+<img src="public/assets/imgs/list.png" alt="Listagem StatPoker" width="100%" align="center">
 
 ## Formulário de cadastro/edição de torneios
 
-<img src="public/assets/imgs/form.png" alt="Landing StatPoker" width="100%" align="center">
+<img src="public/assets/imgs/form.png" alt="Formulário StatPoker" width="100%" align="center">
 
 ---
 
