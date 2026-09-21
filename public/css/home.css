@@ -1,0 +1,60 @@
+.home__tournament-card {
+    background: linear-gradient(to top, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 90%);
+    backdrop-filter: blur(2px); 
+    border: 1px solid var(--border);
+    box-shadow: 4px 4px 10px var(--shadow);
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.home__tournament-card__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.home__cards-grid {
+  display: grid;
+  /* Cria colunas automáticas de no mínimo 300px. 
+     Se couber outro card de 300px à direita, ele coloca do lado. 
+     Se não couber, joga para baixo! */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px; /* Espaçamento entre os cards */
+  margin-top: 10px;
+}
+
+.home__tournament-card__time{
+    font-weight: bold;
+}
+
+.home__tournament-card__title {
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.home__tournament-card__format {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.home__tournament-card__financials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.home__tournaments-card__financials-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

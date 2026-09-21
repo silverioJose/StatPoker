@@ -1,0 +1,8 @@
+.main-content {
+    padding: 30px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    color: var(--color-text);
+    margin-left: 269px;
+    margin-top: 69px;
+}

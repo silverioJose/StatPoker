@@ -1,0 +1,31 @@
+* {
+    font-family: "Poppins";
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../../assets/fonts/Poppins-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: url(../../assets/fonts/Rajdhani-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: url(../../assets/fonts/Rajdhani-Bold.ttf);
+    font-weight: bold;
+}

@@ -1,0 +1,13 @@
+.page {
+    background-color: var(--color-secondary-bg);
+}
+
+.main {
+    margin-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+

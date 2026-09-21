@@ -1,0 +1,234 @@
+/* ============================================================
+   StatPoker — form-torneio.css
+   Estilos exclusivos para o formulário de criação/edição
+   ============================================================ */
+
+/* Container principal ajustado com a sidebar (240px + margem) e o header (70px + margem) */
+.form-container {
+    margin: 0 30px 40px 0;
+    color: var(--color-text, aliceblue);
+}
+
+/* Header interno do formulário */
+.view__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.view__header__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Layout em 2 colunas */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards e Fieldsets */
+.fieldset-wrapper{
+    background-image: linear-gradient(to top, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 90%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 96%;
+    border-radius: 35px 35px 15px 15px;
+}
+
+.card {
+    border: 1px solid var(--border);
+    box-shadow: 4px 4px 10px var(--shadow);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+legend {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 0 10px;
+    background: none;
+}
+
+/* Labels e Inputs */
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-text, aliceblue);
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: aliceblue;
+    box-shadow: 0 0 4px var(--color-border);
+}
+
+/* Linha com múltiplos campos lado a lado */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Tabelas internas (Itens de Caixa e Blinds) */
+.table-caixa,
+.table-blinds {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Container com scroll vertical fixo */
+.blinds-table-container {
+    max-height: 230px; 
+    overflow-y: auto;  
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+}
+
+/* Garante o cabeçalho fixo no topo ao rolar */
+.blinds-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-bg); 
+    z-index: 10;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+}
+
+/* Opcional: Deixa a barra de rolagem mais discreta */
+.blinds-table-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.blinds-table-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.btn-excluir-item {
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: var(--color-text);
+}
+
+.btn-excluir-item:hover {
+    color: var(--red-accent);
+}
+
+.table-caixa th,
+.table-blinds th {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #888888;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+.table-caixa td,
+.table-blinds td {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Toggles e Checkboxes (Ranking / Jackpot) */
+.toggle-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.switch input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-hover, #444);
+    cursor: pointer;
+}
+
+/* Botões inferiores de ação */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-cancelar {
+    color: var(--color-text, aliceblue);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.btn-cancelar:hover {
+    background-color: var(--color-hover);
+}
+
+.btn-salvar {
+    padding: 12px 24px;
+    background-color: var(--color-primary-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    
+}
+
+.btn-salvar:hover {
+    transform: scale(1.05);
+    background-color: var(--color-hover);
+    box-shadow: 2px 2px 4px var(--color-border);
+}

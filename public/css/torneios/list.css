@@ -1,0 +1,156 @@
+.tournament__list {
+    margin: 99px 30px 0 269px;
+    color: var(--color-text);
+}
+
+.view__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.view__header__title {
+    font-size: 2rem;
+}
+
+.view__btn {
+    transform: scale(1);
+    padding: 13px;
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 90%);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    color: var(--color-text);
+    box-shadow: 4px 4px 10px var(--shadow);
+}
+
+.view__btn:hover {
+    transform: scale(1.1);
+    background-color: var(--color-hover);
+}
+
+/* Componentes da Barra de Filtros */
+.filters-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.filters-bar__select {
+    width: 180px;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.view__tournaments__table {
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 90%);
+    box-shadow: 4px 4px 10px var(--shadow);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.view__tournaments__table_rows {
+    width: 100%;
+}
+
+.view__tournaments__table_rows th {
+    padding: 15px;
+    text-align: left;
+}
+
+.view__tournaments__table_data td {
+    padding: 10px;
+    border-top: 1px solid var(--border-dark);
+}
+
+.tournament-info__extra {
+    color: #888;
+}
+
+.action__btn {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-sm {
+    background-color: var(--color-primary-bg);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    padding: 5px;
+    transform: scale(1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--color-text);
+}
+
+.btn-sm_excluir{
+    border: 1px solid var(--red-accent);
+}
+
+.btn-sm:hover {
+    transform: scale(1.02);
+    background-color: rgba(91, 136, 214, 0.8);
+}
+
+.btn-sm_excluir:hover{
+    background-color: rgb(225, 100, 100);
+}
+
+.no_tournaments {
+    background-color: var(--color-secondary-bg);
+    text-align: center;   
+    padding: 20px 20px;     
+    font-size: 1.1rem;     
+    color: #888888;         
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+
+/* Badges de Status */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 12px;
+    text-transform: uppercase;
+    max-width: 100px;
+    text-align: center;
+}
+
+.badge-inscricoes {
+    background-color: rgba(255, 193, 7, 0.15);
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.badge-aovivo {
+    background-color: rgba(40, 167, 69, 0.15);
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.badge-encerrado {
+    background-color: rgba(108, 117, 125, 0.15);
+    color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.badge-agendado {
+    background-color: rgba(236, 253, 2, 0.15);
+    color: #eeff00;
+    border: 1px solid #eeff00;
+}

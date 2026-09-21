@@ -1,0 +1,37 @@
+# Dependências do PHP (Gerenciador Composer)
+/vendor/
+
+# Arquivos de Configuração e Variáveis de Ambiente (com senhas/chaves de API)
+.env
+.env.local
+.env.*.local
+config.local.php
+
+# IDEs e Editores de Código
+/.idea/
+/.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# Logs, Storage e Arquivos Temporários
+*.log
+/logs/
+/tmp/
+/cache/
+/uploads/
+
+# Sistema Operacional
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Testes e Cobertura de Código
+/.phpunit.cache/
+/coverage/
+.php-cs-fixer.cache

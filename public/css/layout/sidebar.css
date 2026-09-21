@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #020024;
+    background: linear-gradient(to bottom, rgba(2, 0, 36, 1), rgb(9 , 34, 77, 0.8), rgba(2, 0, 36, 1));
+    backdrop-filter: blur(2px); 
+    color: aliceblue;
+    padding: 0 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid var(--border);
+    box-shadow: 4px 0 10px var(--shadow);
+    z-index: 100;
+}
+
+.sidebar__home {
+    display: flex;
+    align-items: center;
+    
+    gap: 15px;
+
+    padding: 30px 10px 30px 10px;
+
+    flex-shrink: 0;
+    height: 70px;
+}
+
+.sidebar__title{
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sidebar__logo {
+    margin-left: 5px;
+    width: 50px;
+}
+
+.vertical__nav-ul {
+    
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vertical__nav-subtitle {
+    padding: 35px 0 35px 0;
+    font-family: "Rajdhani";
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.vertical__nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: aliceblue;
+    
+}
+
+.vertical__nav-link.active {
+    
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--red-accent);
+}
+
+.vertical__nav-link:hover {
+    background: var(--color-hover);
+    border-radius: 10px;
+
+    transform: scale(1.06);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+   
+    box-shadow: 2px 2px 4px var(--color-border);
+}
+
+.sidebar__footer {
+    border-top: 1px solid var(--border-dark);
+    padding: 15px 0 15px 0;
+    margin-top: auto;
+    text-align: center;
+}
+
+/*cabeçalho superior*/
+
+.user__header {
+    width: 1681px;
+    margin-left: 240px; 
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 45%, rgba(2, 0, 36, 1) 100%);
+    color: aliceblue;
+    backdrop-filter: blur(2px); 
+
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 10px var(--shadow);
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+    
+}
+
+.header__title {
+    padding: 0 0 0 15px;
+}
+
+.user__header__user {
+    position: relative;
+    margin: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;     /* vertical */
+
+    gap: 10px;
+}
+
+.user__header__user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+
+.user__header__user-name {
+    font-weight: bold;
+}
+
+.user__header__user-level {
+    font-size: 14px;
+    color: grey;
+}
+
+.user__header__user-avatar {
+    width: 50px;
+    border-radius: 4px;
+}
+
+.user__header__popup {
+    display: none;
+    position: absolute;
+    
+
+    top: 60px;
+    right: 5px;
+    
+    background: linear-gradient(to top, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 90%);
+    backdrop-filter: blur(100px); 
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+
+    flex-direction: column;
+    gap: 5px;
+
+    z-index: 10;
+    width: 170px;
+}
+
+/*Preenche o gap entre o avatar e o popup*/
+.user__header__popup::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
+}
+
+.user__header__user:hover .user__header__popup {
+    display: flex;
+}
+
+.popup-btn {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.popup-btn:hover {
+    background: var(--color-hover);
+    box-shadow: 2px 2px 4px var(--color-border);
+}

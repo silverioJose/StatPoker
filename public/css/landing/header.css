@@ -1,0 +1,99 @@
+.header {
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgb(9 , 34, 77, 0.8) 45%, rgba(2, 0, 36, 1) 100%);
+    backdrop-filter: blur(10px);  
+    padding: 10px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px var(--shadow);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    margin-left: 5px;
+    width: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-right: 20px;
+}
+
+.nav__home {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__button {
+    font-family: "Poppins";
+    cursor: pointer;
+    transform: scale(1);
+    text-transform: uppercase;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    font-weight: lighter;
+}
+
+.nav__button-login {
+    padding: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: var(--red-accent);
+}
+
+.nav__button:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+            "logo login"
+            "nav  nav";
+        row-gap: 15px;
+    }
+
+    .nav__home {
+        grid-area: logo;
+    }
+
+    .nav__button-login {
+        grid-area: login;
+        justify-self: end;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .nav {
+        grid-area: nav;
+        justify-content: space-around;
+        gap: 15px;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .nav{
+        font-size: 13px;
+    }
+}

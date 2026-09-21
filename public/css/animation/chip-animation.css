@@ -1,0 +1,138 @@
+.poker-chip-bg {
+  width: 700px;
+  height: 700px;
+  z-index: -1;
+  position: fixed;
+  top: 150px;
+  right: -350px;
+}
+
+.poker-chip-bg2 {
+  width: 700px;
+  height: 700px;
+  z-index: -1;
+  position: fixed;
+  top: 550px;
+  left: -300px;
+}
+
+.poker-chip-svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Base styles for all animated lines */
+.chip-path {
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+  animation: 
+    drawOutline 10s ease-in-out infinite alternate,
+    applyFills 10s ease-in-out infinite alternate;
+}
+
+.chip-path2 {
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+  animation: 
+    drawOutline 10s ease-in-out infinite alternate,
+    applyFills 10s ease-in-out infinite alternate;
+}
+
+.path-red{
+  stroke: rgb(204, 69, 69);
+}
+
+.path-white{
+  stroke: #fff;
+}
+
+.path-dark{
+  stroke: black;
+}
+
+/* Specific fill targets */
+.fill-red {
+  fill: rgba(204, 69, 69, 1);
+}
+
+.fill-white {
+  fill: rgba(230, 230, 230, 0.8);
+}
+
+.fill-dark{
+  fill: black;
+}
+
+@keyframes drawOutline {
+  0% {
+    stroke-dashoffset: 2500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes applyFills {
+  0%, 40% {
+    fill-opacity: 0;
+  }
+  60%, 100% {
+    fill-opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .poker-chip-bg {
+    width: 600px;
+    height: 600px;
+    top: 150px;
+    right: -350px;
+  }
+
+  .poker-chip-bg2 {
+    width: 600px;
+    height: 600px;
+    top: 550px;
+    left: -300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .poker-chip-bg {
+    width: 400px;
+    height: 400px;
+    top: 100px;
+    right: -250px;
+  }
+
+  .poker-chip-bg2 {
+    width: 400px;
+    height: 400px;
+    top: 400px;
+    left: -250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .poker-chip-bg {
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    right: -150px;
+  }
+
+  .poker-chip-bg2 {
+    width: 250px;
+    height: 250px;
+    top: 400px;
+    left: -150px;
+  }
+}
