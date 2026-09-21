@@ -1,5 +1,5 @@
 ﻿# StatPoker (Protótipo) ♠♥♣♦
-**Desenvolvido por:** [José Pedro](https://github.com/silverioJose) e [Naomi Ribeiro](https://github.com/NaomiMoon6)
+**Desenvolvido por:** [José Pedro](https://github.com/silverioJose) e [Naomi Marra](https://github.com/NaomiMoon6)
 
 O conceito inicial do site consistia em uma interface moderna e simplificada, sem funcionalidade de back-end. O objetivo era implementar operações CRUD (criação, leitura, atualização e exclusão) para torneios de pôquer e seus respectivos itens de caixa. Além disso, realizamos ajustes pontuais na interface original para conferir maior profissionalismo ao protótipo. 
 
